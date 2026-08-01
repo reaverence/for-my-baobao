@@ -101,7 +101,7 @@ function showScreen(nextScreen) {
 
 function startSong() {
   song.play().then(() => {
-    songNote.textContent = "our song is playing ♫";
+    songNote.textContent = "song is playing ♫";
   }).catch(() => {
     songNote.textContent = "tap the bouquet again if the song does not start.";
   });
