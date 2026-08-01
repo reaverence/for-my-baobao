@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#eee6d9" />
+    <meta name="description" content="A small digital gift for Baobao." />
+    <title>for my Baobao</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="gift-app" id="giftApp">
+      <div class="paper-noise" aria-hidden="true"></div>
+      <div class="ambient-petals" id="ambientPetals" aria-hidden="true"></div>
+      <section class="gift-screen gift-screen--opening is-active" id="openingScreen" aria-label="Your wrapped bouquet">
+        <div class="opening-copy">
+          <p class="eyebrow">a little something for you</p>
+          <h1>I got you<br /><em>flowers Baby!</em></h1>
+          <p>There is more hiding inside, but you have to tap the bouquet first.</p>
+        </div>
+        <div class="wrapped-stage">
+          <span class="stage-doodle stage-doodle--one" aria-hidden="true">for you</span>
+          <span class="stage-doodle stage-doodle--two" aria-hidden="true">&#9825;</span>
+          <button class="wrapped-bouquet" id="unwrapButton" aria-label="Tap to unwrap your bouquet">
+            <span class="bouquet-halo" aria-hidden="true"></span>
+            <img src="images/bouquet/bouquet-sticker-02.png" alt="A wrapped autumn bouquet for Baobao" />
+            <span class="tap-label">tap the ribbon</span>
+          </button>
+        </div>
+        <p class="bottom-hint">tap once when you are ready</p>
+      </section>
+
+      <section class="gift-screen gift-screen--burst" id="burstScreen" aria-hidden="true">
+        <div class="burst-field" id="burstField" aria-hidden="true"></div>
+        <div class="burst-letter" id="burstLetter">
+          <button class="burst-letter-visual" id="burstLetterOpen" aria-label="Open the love letter">
+            <span class="paper-tape paper-tape--burst" aria-hidden="true"></span>
+            <img src="images/letter/letter-sticker-clean.png" alt="A cream envelope sealed with a red heart" />
+            <span class="letter-photo-caption">for my Baobao <em>tap to open</em></span>
+          </button>
+          <article class="burst-letter-content" id="burstLetterContent" aria-hidden="true">
+            <p>Happy Girlfriend's Day Baobao! &#128513;</p>
+            <p>I just wanted to remind you how lucky I feel to have you in my life.</p>
+            <p>Thank you for loving me.. for choosing me.. and for letting me be a part of your world.</p>
+            <p>I hope you never forget how deeply loved you are.. because you really are my better half.. my missing piece.. and my favorite person. &#128513;</p>
+            <p>Sometimes I still can't believe I get to call you my girlfriend.</p>
+            <p>The more I get to know you.. the more certain I become that you are the person I want to spend my life with.</p>
+            <p>I love your weird little moments.. your random thoughts.. your laugh.. even the days when you're a little grumpy.. they just make me want to hug you even more.. and the way you somehow make my day better just by being in it.</p>
+            <p>Those are the little things that first stole my heart.. and they're still my favorite things about you today. &#10084;&#65039;</p>
+            <p>Thank you for always being there for me.. through everything.</p>
+            <p>Thank you for always reminding me that I'm enough.. especially on the days when I struggle to believe it myself.</p>
+            <p>Thank you for always making me feel loved.. safe.. and understood.</p>
+            <p>And thank you for always being weird with me. &#128514; I love that I can be completely myself with you.. and I hope we never lose that part of us.. because it's one of my favorite things about us. &#128584;</p>
+            <p>You make life so much more fun.. and every day feels a little brighter simply because you're in it.</p>
+            <p>Thank you for trusting me with your heart.. and for letting me see every side of you.. the happy you.. the sleepy you.. the silly you.. the grumpy you.. the insecure you.. I love every part of you.. because every part of you is the woman I fell in love with. &#129392;</p>
+            <p>I hope we never stop talking.. never stop laughing together.. and never stop making time for each other.. because those little moments with you are the ones I treasure the most.</p>
+            <p>I can't wait for the day distance is just another story we get to tell.</p>
+            <p>I can't wait to wake up beside you.. to hug you after a long day.. to make you laugh over the smallest things.. to celebrate birthdays.. holidays.. and all our special days together.</p>
+            <p>I can't wait to build a home with you.. fill it with laughter.. and spoil the two little goblins together. &#128539;</p>
+            <p>Having you in my life is something I'll never take for granted.</p>
+            <p>I hope this little gift reminds you just how special you are to me.</p>
+            <p>Happy Girlfriend's Day my love.</p>
+            <p>I love you today.. tomorrow .. and through every ordinary day in between.</p>
+            <p>I love you with all my heart.</p>
+            <p>And if I only get one once-in-a-lifetime kind of love in this life...</p>
+            <p>I'm so grateful...</p>
+            <p>that it's you.</p>
+            <p>You are the love of my life.</p>
+            <span class="letter-signature">always yours,<br /><em>Your baby. &#10084;&#65039;</em></span>
+          </article>
+          <button class="gift-button burst-letter-next" id="burstContinue" hidden>keep opening <span aria-hidden="true">&#8594;</span></button>
+        </div>
+      </section>
+
+      <section class="gift-screen gift-screen--stickers" id="stickerScreen" aria-hidden="true">
+        <p class="sequence-mark">three little bouquets for you</p>
+        <div class="mood-intro">
+          <h2>three little bouquets<br /><em>for every mood.</em></h2>
+          <p>They are all yours, baby. Open each one slowly.</p>
+        </div>
+        <div class="mood-bouquets">
+          <button class="mood-bouquet mood-bouquet--sad" aria-expanded="false" data-sticker-note="One bouquet opened. Two more little notes are waiting for you, baby.">
+            <span class="mood-label">just because...</span>
+            <span class="mood-art">
+              <img class="mood-bouquet-image" src="images/bouquet/bouquet-cutout-02.png" alt="A soft muted dried-flower bouquet" />
+            </span>
+            <span class="mood-hint">tap to open</span>
+            <span class="mood-message" aria-hidden="true">
+              <strong>&#127800; Just because...</strong>
+              <span>Hi Baby.. &#10084;&#65039;</span>
+              <span>These flowers are for you..</span>
+              <span>Not because you need a reason.. but because you deserve them.</span>
+              <span>I hope they make you smile.. even if it's just for a little while.</span>
+              <span>Now imagine your baby handing these to you with the biggest smile on his face. &#129325;</span>
+            </span>
+          </button>
+          <button class="mood-bouquet mood-bouquet--working" aria-expanded="false" data-sticker-note="Two bouquets opened. One more little note is waiting for you, my love.">
+            <span class="mood-label">when you're working hardest</span>
+            <span class="mood-art">
+              <img class="mood-bouquet-image" src="images/bouquet/bouquet-cutout-03.png" alt="A colorful coral and peach bouquet" />
+            </span>
+            <span class="mood-hint">tap to open</span>
+            <span class="mood-message" aria-hidden="true">
+              <strong>&#127804; For the days you're working your hardest</strong>
+              <span>Hi Baobao.. &#10084;&#65039;</span>
+              <span>These flowers are for the hardest working woman I know.</span>
+              <span>I'm so proud of everything you do.. and I hope you remember to take care of yourself too.</span>
+              <span>Don't work too hard okay?.. Your baby is always cheering for you.. and I'll be here to celebrate every little victory with you. &#128536;</span>
+            </span>
+          </button>
+          <button class="mood-bouquet mood-bouquet--morning" aria-expanded="false" data-sticker-note="All three bouquets are open. You are very, very loved.">
+            <span class="mood-label">when you miss your baby</span>
+            <span class="mood-art">
+              <img class="mood-bouquet-image" src="images/bouquet/bouquet-sticker-01.png" alt="A bright orange rose and tulip bouquet" />
+            </span>
+            <span class="mood-hint">tap to open</span>
+            <span class="mood-message" aria-hidden="true">
+              <strong>&#128144; For when you miss your baby a little</strong>
+              <span>Hi My love.. &#10084;&#65039;</span>
+              <span>These flowers are for the moments when you miss me a little. &#128541;</span>
+              <span>So here's a bouquet.. a hug.. a forehead kiss.. and a reminder that I'm missing you too.</span>
+              <span>One day.. I won't have to send flowers through a screen anymore.</span>
+              <span>I'll be there to hand them to you myself. &#128537;</span>
+            </span>
+          </button>
+        </div>
+        <p class="sticker-note" id="stickerNote" role="status" aria-live="polite">open each bouquet for a little note</p>
+        <button class="gift-button gift-button--disabled" id="stickerContinue" disabled>open the final gift <span aria-hidden="true">&#8594;</span></button>
+      </section>
+
+      <section class="gift-screen gift-screen--final" id="finalScreen" aria-hidden="true">
+        <div class="favorite-field" id="favoriteField" aria-hidden="true"></div>
+        <img class="favorite-gift-box" src="images/favorites/gift-box-clean.png" alt="" aria-hidden="true" />
+        <div class="final-copy">
+          <p class="eyebrow">one last thing, baby</p>
+          <h2>you made it<br /><em>to the end.</em></h2>
+          <p>Hehehe.. You made it to the end. &#128518;</p>
+          <p>I hope you had fun going through all of this.</p>
+          <p>I wanted to make you something that would make you smile.. so I filled it with little things that reminded me of you..</p>
+          <p>And btw.. I only learned how to make something like this yesterday. &#128514; So if anything looks a little wonky.. just pretend it's part of the design okay? Hehehe.</p>
+          <p>Every little part of this made me think of you.. and I really hope it made you smile the way I imagined it would. &#128517;</p>
+          <p>If you smiled even once while looking through everything.. then my mission was a success. &#128526;</p>
+          <p class="final-love">I love you very very very much! &#10084;&#65039; &#10084;&#65039; &#10084;&#65039;</p>
+          <span class="final-mark">HEHEHEHE Mwahhhhh! &#128536; &#128536; &#128536;</span>
+        </div>
+        <button class="replay-button" id="replayButton">watch the little gift again <span aria-hidden="true">&#8635;</span></button>
+      </section>
+
+      <p class="song-note" id="songNote" role="status" aria-live="polite"></p>
+      <audio id="loveSong" preload="auto" loop src="song/Keshi%20-%20WANTCHU.mp3"></audio>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
